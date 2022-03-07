@@ -1,13 +1,15 @@
 package dev.marvinrosa;
-import lombok.Getter;
-import lombok.Setter;
 
 
-public class App 
+import ui.MainMenu;
+
+public class App
 {
     public static void main( String[] args )
     {
-        System.out.println("Welcome Delivery App");
-        System.out.println("-------------------------");
+        int optionMenu;
+        MainMenu menu = new MainMenu();
+        System.out.println(menu.showMainMenu());
+        menu.AppMenu();
     }
 }
