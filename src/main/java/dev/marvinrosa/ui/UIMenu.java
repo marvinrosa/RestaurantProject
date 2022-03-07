@@ -1,6 +1,4 @@
-package ui;
-
-import model.Product;
+package dev.marvinrosa.ui;
 
 public class UIMenu implements UIComponent, NavigationInterface {
 

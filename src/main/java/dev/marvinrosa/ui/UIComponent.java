@@ -1,4 +1,4 @@
-package ui;
+package dev.marvinrosa.ui;
 
 public interface UIComponent<T> {
 

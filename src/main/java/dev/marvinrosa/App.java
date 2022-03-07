@@ -1,7 +1,7 @@
 package dev.marvinrosa;
 
 
-import ui.MainMenu;
+import dev.marvinrosa.ui.MainMenu;
 
 public class App
 {

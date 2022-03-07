@@ -1,4 +1,4 @@
-package ui;
+package dev.marvinrosa.ui;
 
 import java.util.Scanner;
 
