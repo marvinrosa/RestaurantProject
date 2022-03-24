@@ -35,7 +35,8 @@ public class OrderDetail {
     @Override
     public String toString() {
         return  product +
-                "\t" +  quantity +
-                "\t" + subTotalCalc();
+
+                "\t\t\t" +  quantity +
+                "\t\t\t" + subTotalCalc();
     }
 }

@@ -8,7 +8,9 @@ public class Customer {
     private String email;
     private Boolean isActive;
 
-    public Customer() {
+    public Customer(String name, String email) {
+        this.name = name;
+        this.email = email;
         this.id = ++countId;
     }
 

@@ -19,6 +19,12 @@ public class Product {
         this.id = ++lastId;
     }
 
+    public Product(String name, float price) {
+        this.name = name;
+        this.price = price;
+        this.id = ++lastId;
+    }
+
     public int getId() {
         return id;
     }
@@ -43,6 +49,6 @@ public class Product {
     public String toString() {
         return id +
                 "\t" + name +
-                "\t" + price;
+                "\t\t\t" + price;
     }
 }

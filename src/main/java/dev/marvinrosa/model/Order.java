@@ -10,8 +10,8 @@ public class Order {
     private int indexItems;
     public static final int MAX_ITEMS = 1000;
 
-    public Order(String description,Customer customer) {
-       this.description = description;
+    public Order(Customer customer) {
+       this.description = "Order No: ";
         this.customer = customer;
         this.items = new OrderDetail[MAX_ITEMS];
         this.id = ++lastId;
@@ -55,8 +55,6 @@ public class Order {
     /**
      *  Sum of articles
      */
-
-
     public float TotalCalc() {
         float total = 0.0f;
         for (OrderDetail item : this.items) {
@@ -69,17 +67,15 @@ public class Order {
     }
 
     public String OrderPrint(){
-        StringBuilder sb = new StringBuilder("Order Nº: ");
+        StringBuilder sb = new StringBuilder(this.description);
         sb.append(id)
-                .append("\nCliente: ")
+                .append("\nCustomer: ")
                 .append(this.customer.getName())
                 .append("\t Email: ")
                 .append(customer.getEmail())
-                .append("\nDescripción: ")
-                .append(this.description)
                 .append("\n")
-                .append("\n#\tNombre\t$\tCant.\tTotal\n");
-
+                .append("\n#\t[S]Name \t\t[$] Price \t\t[U] Qty\t\t [$] Sub-Total\n")
+                .append("------------------------------------------------------------\n");
         for(OrderDetail orderDetail: this.items){
             if(orderDetail == null){
                 continue;
@@ -87,8 +83,8 @@ public class Order {
             sb.append(orderDetail)
                     .append("\n");
         }
-        sb.append("\nGran Total: ")
-                .append(TotalCalc());
+        sb.append("\nTotal ")
+                .append("[$] " + TotalCalc());
 
         return sb.toString();
     }
