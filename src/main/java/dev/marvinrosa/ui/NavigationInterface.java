@@ -1,8 +1,6 @@
 package dev.marvinrosa.ui;
 
 public interface NavigationInterface {
-
-
     void checkMenu();
     void cart();
     void pay();

@@ -27,8 +27,34 @@ public class MainMenu {
         titles = "1. Check Menu " + "\n" +
                  "2. Search Menu " + "\n" +
                  "3. Add Item " + "\n" +
-                 "4. Return " + "\n" +
-                 "5. Exit" + "\n" ;
+                 "4. Return " + "\n" ;
+
+        return titles;
+    }
+
+    public String titlesMainSubMenuCatalog2(){
+        titles = "1. Check Menu " + "\n" +
+                "2. Search Menu " + "\n" +
+                "3. Add Item " + "\n" +
+                "4. Return " + "\n" ;
+
+        return titles;
+    }
+
+    public String titlesMainSubMenuCatalog3(){
+        titles = "1. Check Menu " + "\n" +
+                "2. Search Menu " + "\n" +
+                "3. Add Item " + "\n" +
+                "4. Return " + "\n" ;
+
+        return titles;
+    }
+
+    public String titlesMainSubMenuCatalog4(){
+        titles = "1. Check Menu " + "\n" +
+                "2. Search Menu " + "\n" +
+                "3. Add Item " + "\n" +
+                "4. Return " + "\n" ;
 
         return titles;
     }
